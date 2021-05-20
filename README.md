@@ -33,3 +33,9 @@ country      → Database
 3. Now you'll also need a vehicle (truck) to bring back the goods from the the destination.                              → Statement 
 4. And you'll also need to list the requirements with the vehicle .                                                                        → Query
 5. And after getting approval , you will get the goods in a box ready to be loaded into your truck.                   → Resultset
+
+
+![image](https://user-images.githubusercontent.com/67774570/119028178-cb45a600-b9c4-11eb-8c74-90f0f77b6c7d.png)
+
+![image](https://user-images.githubusercontent.com/67774570/119028204-d0a2f080-b9c4-11eb-9088-bfbccbef51c9.png)
+
