@@ -14,6 +14,6 @@ FrontEnd       <———>      BackEnd
 
 Java Database Connectivity (JDBC) is an application programming interface (API) for the programming language Java, which defines how a client may access a database. It is a Java-based data access technology used for Java database connectivity. It is part of the Java Standard Edition platform, from Oracle Corporation.
 
-<p aligh= 'right'>
+<p aligh="right">
 ![image](https://user-images.githubusercontent.com/67774570/119027637-36db4380-b9c4-11eb-8b1f-9d262d0bc3db.png)
 </p>
