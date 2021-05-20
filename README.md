@@ -39,3 +39,64 @@ country      → Database
 
 ![image](https://user-images.githubusercontent.com/67774570/119028204-d0a2f080-b9c4-11eb-9088-bfbccbef51c9.png)
 
+
+
+***Overall Steps:*** 
+
+1. Load & Register the Driver.
+2. Establish the Connection.
+3. Create the Statement.
+4. Execute the Query.
+5. Process Result 
+6. close connection.
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6da44543-b600-4554-b740-0c8602aa253a/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6da44543-b600-4554-b740-0c8602aa253a/Untitled.png)
+
+---
+
+STEPS TO MAKE A DATABASE  - JAVA CONNECTION :
+
+1. import the package.
+import java.sql.*;
+
+2.  Load and Register the Driver.
+
+    Register the library using the method : forName("Driver name");
+
+    ex: Class.forName(com.mysql.jdbc.Driver);
+
+        ^ Class is necessary because forName() is inside java.lang.Class ([Java reflection API](https://www.javatpoint.com/java-reflection))
+
+    forName() belongs to class Class.
+
+    java.lang.Class  →  Class.forName(com.mysql.jdbc.Driver)
+
+3. Establish the Connection.
+
+     by using the interface : Connection.
+    Connection con            =         DriverManager.getConnection(link, username ,password);
+    ^Interface   ^reference                ^class              ^Static Method of class DriverManager
+
+    getConnection           (     "jdbc:mysql://localhost:3306/javaclass"   ,     "root"    ,        "2903"      );
+    ^makes connection          ^ link to the database                                  ^username      ^password
+
+    Connection obj = DriverManager.getConnection("jdbc:mysql://localhost:3306/java", root ,pass");
+
+4. Create Statement:
+Statement st = con.createStatement();
+PreparedStatement pst = con.prepareStatement(qry);
+CallableStatement  
+5. Execute the Query:
+st.executeQuery("query");
+pst.execute();
+
+6. Process the result.
+The result will be stored in the object of Interface ResultSet.(Statement())
+ResultSet rs = s.executeQuery(str);
+rs.next() → will shift the pointer from 1 to 2
+rs.getInt(1)+" "+ rs.getString(2)+" "+ rs.getInt(3);
+(instead of writing all in line , use a while loop)  
+
+7. Close the connection.
+
+     con.close();
