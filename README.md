@@ -50,7 +50,8 @@ country      → Database
 5. Process Result 
 6. close connection.
 
-![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6da44543-b600-4554-b740-0c8602aa253a/Untitled.png)
+![image align="right"](https://user-images.githubusercontent.com/67774570/119028434-15c72280-b9c5-11eb-99fb-a00e6b9b6228.png)
+
 
 ---
 
