@@ -127,3 +127,14 @@ Add the build path to the project:
 3. build path
 4. libraries 
 5. Add library > jre system library > Finish
+
+
+
+### Oracle Connector:                                            [ oracle.jdbc.driver.OracleDriver ]
+
+1. Make a New Project 
+2. Make a New Folder called "lib"  
+3. Go to the downloaded Oracle Connector File  and copy it .
+4. Right click on lib and paste it.
+5. open lib , and right click on the pasted file and select "Build Path" 
+6. Select "Add to Build Path". and Done!
