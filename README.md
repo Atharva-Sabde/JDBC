@@ -138,3 +138,18 @@ Add the build path to the project:
 4. Right click on lib and paste it.
 5. open lib , and right click on the pasted file and select "Build Path" 
 6. Select "Add to Build Path". and Done!
+
+
+
+There are 4 different types of drivers:
+1. Native driver (ODBC bridge) for MS access.
+2.  Pure java drivers
+3. Oracle driver
+4. PostgreSql driver
+5. MySql driver   (com.mysql.jdbc.Driver)
+
+![image](https://user-images.githubusercontent.com/67774570/119269087-97ac8b00-bc13-11eb-8ab8-a4c65fdd6520.png)
+
+<br> <hr>
+
+![image](https://user-images.githubusercontent.com/67774570/119269103-a2672000-bc13-11eb-8674-5197ffa4c5ac.png)
