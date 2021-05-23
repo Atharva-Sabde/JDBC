@@ -101,3 +101,29 @@ rs.getInt(1)+" "+ rs.getString(2)+" "+ rs.getInt(3);
 7. Close the connection.
 
      con.close();
+     
+     
+$$================================   Preparation   ================================$$
+
+There are two methods to add and connect the JDBC jar files.
+
+- Paste it in the 'ext'  folder of jre.( will work globally , but if the project is moved to another machine , program won't run, as the JAR file could be missing on the other machine.)
+- Make new folder  'lib' inside each Project of eclipse and build path. ( specific to the parent project , but moves with the project [mobility] , and run on any machine )
+
+---
+
+### MySql Connector :                                                        [ com.mysql.jdbc.Driver ]
+
+Download the Connection .jar file from internet.  [ jar file is a library :  com.mysql.jdbc.Driver ]
+
+Extract it and paste it in the ext folder inside JRE. [C:\Program Files\Java\jre1.8.0_281\lib\ext]
+
+After creating a project , you need to set build path for the sql 
+
+Add the build path to the project:
+
+1. right click project
+2. Properties
+3. build path
+4. libraries 
+5. Add library > jre system library > Finish
