@@ -153,3 +153,15 @@ There are 4 different types of drivers:
 <br> <hr>
 
 ![image](https://user-images.githubusercontent.com/67774570/119269103-a2672000-bc13-11eb-8674-5197ffa4c5ac.png)
+
+
+<hr>
+## Statements:
+
+Statements are the Interfaces 
+
+CRUD : Create-Read-Update-Delete
+
+Three Types of operations :
+
+![image](https://user-images.githubusercontent.com/67774570/119876215-47039d80-bf45-11eb-8b0b-252c783f1c4f.png)
