@@ -165,3 +165,20 @@ CRUD : Create-Read-Update-Delete
 Three Types of operations :
 
 ![image](https://user-images.githubusercontent.com/67774570/119876215-47039d80-bf45-11eb-8b0b-252c783f1c4f.png)
+
+[link](https://www.javastudypoint.com/2018/09/Statement-vs-PreparedStatement-vs-CallableStatement-in-java.html)
+
+[https://www.javastudypoint.com/2018/09/Statement-vs-PreparedStatement-vs-CallableStatement-in-java.html](https://www.javastudypoint.com/2018/09/Statement-vs-PreparedStatement-vs-CallableStatement-in-java.html)
+
+1. **Statement**                   :   Normal statement         (DQL operations)        [ select ]
+
+→ Passing the query is not needed for compilation , because it compiles for every execution.
+
+→ Passing the query is mandatory for execution : executeQuery(qry);
+
+---
+
+every time  sql statement is sent to the database , it does 2 things:
+
+1. compilation of statement multiple times.    
+2. Execution of the query multiple times.  [executeQuery(String )   [executeUpdate(String  )
