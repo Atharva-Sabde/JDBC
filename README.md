@@ -182,3 +182,43 @@ every time  sql statement is sent to the database , it does 2 things:
 
 1. compilation of statement multiple times.    
 2. Execution of the query multiple times.  [executeQuery(String )   [executeUpdate(String  )
+
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/89875987-64ea-49eb-af47-7257fa105081/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/89875987-64ea-49eb-af47-7257fa105081/Untitled.png)
+
+(if same query repeated , it gets compiled  every time, so less efficiency)
+
+---
+
+---
+
+2. Prepared Statement    :   Inbuilt query            (DML operations)        [insert - update -delete ] 
+
+→ Passing the query while compilation is mandatory using prepareStatement() method.
+
+→ Passing the query while executing is not  needed : execute();
+
+---
+
+every time Prepared statement is sent to the database , it does 2 things:
+
+1. pre-compiles the statement only once.   [prepareStatement(String qry); → pre compilation
+2. Execution of the query multiple times : execute();
+
+- has methods to bind parameters dynamically.  [ setter methods]
+
+ 
+
+![image](https://user-images.githubusercontent.com/67774570/119876566-a5c91700-bf45-11eb-9d53-3302be804f9b.png)
+
+(if same query repeated, it gets only compiled once, so more efficiency)
+
+---
+
+---
+
+3. **Callable Statement**      :   Stored procedures | PLsql 
+
+CallableStatement cst = prepareCall("{ call  ()}");   // plsql function as query
+cst.execute();
+
+CallableStatement can accept runtime input parameters.
